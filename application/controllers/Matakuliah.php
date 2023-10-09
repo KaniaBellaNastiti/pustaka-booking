@@ -6,6 +6,7 @@ class Matakuliah extends CI_Controller
     {
         $this->load->view('view-form-matakuliah');
     }
+    
     public function cetak()
     {
         $data = [
@@ -13,7 +14,7 @@ class Matakuliah extends CI_Controller
             'nama' => $this->input->post('nama'),
             'sks' => $this->input->post('sks')
         ];
-        
+
         $this->load->view('view-data-matakuliah', $data);
     }
 }
